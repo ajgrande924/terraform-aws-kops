@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# bail out if anything fails
+set -e
+
+rm -rf terraform/.terraform\
+  kops/.terraform\
+  kops/data\
+  kops/*.tf\
+  kops/*.tfstate*\
+  kops/cluster.yaml
