@@ -1,4 +1,4 @@
-# terraform-kops
+# terraform-aws-kops
 > deploy a kubernetes cluster using terraform aws resources and kops. 
 
 ## requirements
@@ -51,4 +51,5 @@ cd ..
   - Medium: [Deploying Kubernetes clusters with kops and Terraform](https://medium.com/bench-engineering/deploying-kubernetes-clusters-with-kops-and-terraform-832b89250e8e)
   - Github: [Deploying Kubernetes clusters with kops and Terraform](https://github.com/BenchLabs/blog-k8s-kops-terraform)
   - Github: [Kops Cluster Templating](https://github.com/kubernetes/kops/blob/master/docs/cluster_template.md)
+  - Github: [terraform-aws-foundation](https://github.com/fpco/terraform-aws-foundation/tree/master/examples/kops-with-vpc)
   - Blog: [Kops vs. EKS](https://caylent.com/kops-vs-eks-a-comparison-guide)
