@@ -1,5 +1,5 @@
 # terraform-aws-kops
-> deploy a kubernetes cluster using terraform aws resources and kops. 
+> deploy a kubernetes cluster using terraform aws resources and kops 
 
 ## requirements
 
@@ -13,6 +13,13 @@
   - create s3 bucket for terraform remote state: `tf-state-924` (us-west-2)
   - setup route53 for domain: `practicedevops.org`
 
+Add aws credentials to `.profile` or `.zprofile`:
+```sh
+export AWS_ACCESS_KEY_ID=XXXXXXXXXXXXXXXXXXX 
+export AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXX
+```
+
+Using `terraform@>=0.12`, to provision the infrastructure:
 ```sh
 # provision vpc
 cd terraform
