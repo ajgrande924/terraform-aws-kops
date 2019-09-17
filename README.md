@@ -4,8 +4,9 @@
 ## requirements
 
   - jq
-  - kops @ 1.13.0
   - kubectl
+  - k8 @ 1.13.10
+  - kops @ 1.13.0
   - terraform @ >= 0.12
 
 ## usage
@@ -39,6 +40,7 @@ terraform apply
 # destroy (cluster -> vpc)
 cd kops
 terraform destroy
+./cleanup_cluster.sh
 cd ../terraform
 terraform destroy
 cd ..
@@ -47,7 +49,7 @@ cd ..
 
 ## todo
 
-  - setup `kubectl` to communicate with `api.k8s-dev0.practicedevops.org`
+  - setup `kubectl` to communicate with `sandbox.practicedevops.xyz`
   - update `cluster_template.yml` to deploy flask / data pipeline
   - update `cluster_template.yml` to deploy monitoring tool
   - update `cluster_template.yml` to inject chaos

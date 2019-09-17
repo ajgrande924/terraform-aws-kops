@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# bail out if anything fails
+set -e
